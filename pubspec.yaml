@@ -1,0 +1,32 @@
+name: princemovie
+description: "PrinceMovie — catalogue de films et séries, sources légales uniquement (TMDB + Archive.org)."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Edith — appels réseau (TMDB, Archive.org)
+  http: ^1.6.0
+  # Friday / Edith — clé API TMDB, favoris, historique (stockage local)
+  shared_preferences: ^2.5.6
+  # Tadashi — lecteur vidéo intégré
+  video_player: ^2.14.1
+  chewie: ^1.18.1
+  # Tadashi — téléchargements (dossier local, permissions)
+  path_provider: ^2.1.6
+  permission_handler: ^13.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/logo.png
